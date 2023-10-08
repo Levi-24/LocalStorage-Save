@@ -25,7 +25,6 @@ function mentes(){
 };
 
 /*Tomb elemeinek kiirasa*/
-let index;
 function render(){
     let lista = "";
     allapot.lista.forEach(elem => {
@@ -35,7 +34,7 @@ function render(){
                 <div class="${elem.bool ? "bg-success" : "bg-danger"} m-4 p-4 text-center text-white">
                     <p>${elem.string}</p>
                     <p>${elem.int}</p>
-                    <button class="btn btn-danger" onclick = "torles(${index})">Törlés</button>
+                    <button class="btn btn-danger" onclick = "torles()">Törlés</button>
                 </div>
             </div>
         </div>
@@ -46,7 +45,7 @@ function render(){
 };
 
 /*Torles funkcio*/
-function torles(index){
+function torles(){
     allapot.lista.splice(index, 1);
     mentes();
     render();
