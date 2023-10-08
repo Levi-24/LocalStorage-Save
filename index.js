@@ -25,7 +25,6 @@ function mentes(){
 };
 
 /*Tomb elemeinek kiirasa*/
-
 let index;
 function render(){
     let lista = "";
